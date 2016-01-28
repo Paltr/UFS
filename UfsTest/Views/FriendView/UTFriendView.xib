@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friend_cell" rowHeight="102" id="DlE-j3-4JH" customClass="UTFriendView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DlE-j3-4JH" id="eHr-Cc-96I">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия Имя" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Vuq-7K-qW6">
+                        <rect key="frame" x="106" y="8" width="206" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="uBy-cr-nTm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="c7J-HN-Q0t">
+                        <rect key="frame" x="106" y="37" width="206" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="aDz-Kb-Grk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Университет" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Idg-Gy-79Q">
+                        <rect key="frame" x="106" y="66" width="206" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="cmX-in-Fk6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r0j-Gt-0Wl">
+                        <rect key="frame" x="8" y="6" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="774-XV-Kze"/>
+                            <constraint firstAttribute="height" constant="90" id="FQx-Sd-3iB"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r0j-Gt-0Wl" firstAttribute="top" secondItem="eHr-Cc-96I" secondAttribute="top" constant="6" id="FaX-aN-xPm"/>
+                    <constraint firstItem="r0j-Gt-0Wl" firstAttribute="leading" secondItem="eHr-Cc-96I" secondAttribute="leading" constant="8" id="JME-LI-VsS"/>
+                    <constraint firstAttribute="trailing" secondItem="c7J-HN-Q0t" secondAttribute="trailing" constant="8" id="MKN-2i-QAy"/>
+                    <constraint firstItem="Idg-Gy-79Q" firstAttribute="leading" secondItem="r0j-Gt-0Wl" secondAttribute="trailing" constant="8" id="SJD-qR-JP8"/>
+                    <constraint firstItem="Vuq-7K-qW6" firstAttribute="top" secondItem="eHr-Cc-96I" secondAttribute="top" constant="8" id="SdB-9k-d6F"/>
+                    <constraint firstAttribute="trailing" secondItem="Idg-Gy-79Q" secondAttribute="trailing" constant="8" id="U2t-VK-TRt"/>
+                    <constraint firstItem="Vuq-7K-qW6" firstAttribute="leading" secondItem="r0j-Gt-0Wl" secondAttribute="trailing" constant="8" id="Yhn-LP-4mK"/>
+                    <constraint firstItem="c7J-HN-Q0t" firstAttribute="leading" secondItem="r0j-Gt-0Wl" secondAttribute="trailing" constant="8" id="c6n-eB-Otp"/>
+                    <constraint firstItem="Idg-Gy-79Q" firstAttribute="top" secondItem="c7J-HN-Q0t" secondAttribute="bottom" constant="8" id="eqe-2d-fla"/>
+                    <constraint firstItem="c7J-HN-Q0t" firstAttribute="top" secondItem="Vuq-7K-qW6" secondAttribute="bottom" constant="8" id="tsv-xY-HeR"/>
+                    <constraint firstAttribute="trailing" secondItem="Vuq-7K-qW6" secondAttribute="trailing" constant="8" id="u2R-JY-SKE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarView" destination="r0j-Gt-0Wl" id="14y-XG-YC6"/>
+                <outlet property="cityLabel" destination="c7J-HN-Q0t" id="cYl-Om-OHS"/>
+                <outlet property="nameSurnameLabel" destination="Vuq-7K-qW6" id="1Bu-1z-PlN"/>
+                <outlet property="universityLabel" destination="Idg-Gy-79Q" id="O3F-2M-jDB"/>
+            </connections>
+            <point key="canvasLocation" x="356" y="336"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
